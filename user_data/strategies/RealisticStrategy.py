@@ -18,15 +18,15 @@ class RealisticStrategy(IStrategy):
     # Stoploss - VERY WIDE for extreme aggressive trading (OK with losses)
     stoploss = -0.12  # max 12% loss - extreme aggressive mode
 
-    # Minimal ROI - EXTREME HIGH targets (20%+) to catch ONLY big moves
+    # Minimal ROI - REALISTIC targets for regular market movements
     minimal_roi = {
-        "0": 0.200,   # 20.0% profit target immediately (catch HUGE moves!)
-        "5": 0.180,   # 18.0% after 5 minutes
-        "10": 0.150,  # 15.0% after 10 minutes
-        "20": 0.120,  # 12.0% after 20 minutes
-        "30": 0.100,  # 10.0% after 30 minutes
-        "60": 0.080,  # 8.0% after 1 hour
-        "120": 0.050  # 5.0% after 2 hours
+        "0": 0.020,   # 2.0% profit target immediately
+        "5": 0.015,   # 1.5% after 5 minutes
+        "10": 0.012,  # 1.2% after 10 minutes
+        "20": 0.010,  # 1.0% after 20 minutes
+        "30": 0.008,  # 0.8% after 30 minutes
+        "60": 0.006,  # 0.6% after 1 hour
+        "120": 0.005  # 0.5% after 2 hours (minimum - will close at 0.5%+)
     }
 
     # Disable sell signal - let ROI and stoploss handle exits
