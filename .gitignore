@@ -1,0 +1,38 @@
+# Virtual environments and modules
+freq_env/
+env/
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Database files
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+
+# Logs
+*.log
+logfile.txt
+
+# OS files
+.DS_Store
+.idea/
+.vscode/
+
+# Build files
+build/
+dist/
+*.egg-info/
+
+# Test cache
+.pytest_cache/
+.mypy_cache/
+.coverage
+
+# Jupyter
+*.ipynb_checkpoints
+
+# Docker
+docker-compose-*.yml
