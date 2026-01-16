@@ -19,7 +19,6 @@ logfile.txt
 # OS files
 .DS_Store
 .idea/
-.vscode/
 
 # Build files
 build/
@@ -36,3 +35,7 @@ dist/
 
 # Docker
 docker-compose-*.yml
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
+branch_structure.json
